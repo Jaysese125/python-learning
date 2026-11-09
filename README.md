@@ -11,14 +11,18 @@ Every folder in this repository represents a completed lesson or module. Inside 
 
 ## 🗺️ Course Progress
 
-### Python Basics
+### Python_Basics
 - [x] **01_Introduction_to_Python**
   - What is Python?
   - Common industry uses (Data Science, Web Dev, Cybersecurity).
+  
 - [x] **02_Variables_and_Data_Types**
   - How to declare variables.
   - Naming rules and conventions (`snake_case`).
   - Writing comments.
+  - How the `print()` function works.
+  - Common Data Types (Integer, Float, String, Boolean).
+  - The `type()` and `isinstance()` functions.
 
 ## 🎯 My Goals
 - [ ] Complete the freeCodeCamp Python Certification.
