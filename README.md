@@ -23,10 +23,14 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - How the `print()` function works.
   - Common Data Types (Integer, Float, String, Boolean).
   - The `type()` and `isinstance()` functions.
-  
+
 - [x] **03_Report_card_printer**
   - Practicing string, boolean, integer, and float data types.
   - Using the `type()` and `isinstance()` functions to verify data.
+
+- [x] **04_Introduction_to_Strings**
+  - String creation, multi-line strings, escape sequences.
+  - String indexing, length, and immutability.
 
 ## 🎯 My Goals
 - [ ] Complete the freeCodeCamp Python Certification.
