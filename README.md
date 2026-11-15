@@ -31,6 +31,9 @@ Every folder in this repository represents a completed lesson or module. Inside 
 - [x] **04_Introduction_to_Strings**
   - String creation, multi-line strings, escape sequences.
   - String indexing, length, and immutability.
+  - String concatenation and interpolation (f-strings).
+  - String slicing (including the step parameter and reversing).
+  - Common string methods (`upper()`, `lower()`, `strip()`, `replace()`, `split()`, `join()`, `find()`, `count()`, etc.).
 
 ## 🎯 My Goals
 - [ ] Complete the freeCodeCamp Python Certification.
