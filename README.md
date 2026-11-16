@@ -35,6 +35,12 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - String slicing (including the step parameter and reversing).
   - Common string methods (`upper()`, `lower()`, `strip()`, `replace()`, `split()`, `join()`, `find()`, `count()`, etc.).
 
+- [x] **05_Employee_Profile_Generator**
+  - String concatenation and augmented assignment (`+=`).
+  - Type conversion using `str()`.
+  - Formatting with f-strings.
+  - String slicing (positive and negative indices).
+  
 ## 🎯 My Goals
 - [ ] Complete the freeCodeCamp Python Certification.
 - [ ] Build 5 real-world Python projects.
