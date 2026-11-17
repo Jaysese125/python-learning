@@ -1,21 +1,23 @@
 # 🐍 My Python Learning Journey
 
-Welcome to my Python learning repository! 
+Welcome to my Python learning repository!
 
-This repository documents my journey of learning Python from scratch. To build a strong foundation without relying on AI to write code for me, I am using **freeCodeCamp**. 
+This repository documents my journey of learning Python from scratch. To build a strong foundation without relying on AI to write code for me, I am using **freeCodeCamp**.
 
 Every folder in this repository represents a completed lesson or module. Inside each folder, you will find:
-* 📝 `notes.md` - My digital notes explaining the concepts in my own words.
-* 📸 `.png` screenshots - Proof of completing the freeCodeCamp modules.
-* 💻 `.py` files - The actual practice code I wrote myself to reinforce what I learned.
+
+- 📝 `notes.md` - My digital notes explaining the concepts in my own words.
+- 📸 `.png` screenshots - Proof of completing the freeCodeCamp modules.
+- 💻 `.py` files - The actual practice code I wrote myself to reinforce what I learned.
 
 ## 🗺️ Course Progress
 
 ### Python_Basics
+
 - [x] **01_Introduction_to_Python**
   - What is Python?
-  - Common industry uses (Data Science, Web Dev, Cybersecurity).
-  
+  - Common industry uses (Data Science, Web Development, Cybersecurity).
+
 - [x] **02_Variables_and_Data_Types**
   - How to declare variables.
   - Naming rules and conventions (`snake_case`).
@@ -40,11 +42,24 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - Type conversion using `str()`.
   - Formatting with f-strings.
   - String slicing (positive and negative indices).
-  
+
+- [x] **06_Employee_Profile_Validator**
+  - Finding characters and substrings using `find()`.
+  - Extracting usernames using string slicing.
+  - Checking substrings with the `in` operator.
+  - Cleaning and normalizing strings using `strip()`, `lower()`, and `title()`.
+  - Formatting text using `upper()`.
+  - Replacing characters using `replace()`.
+  - Splitting and joining strings using `split()` and `join()`.
+  - Validating prefixes and suffixes using `startswith()` and `endswith()`.
+  - Counting characters using `count()`.
+
 ## 🎯 My Goals
+
 - [ ] Complete the freeCodeCamp Python Certification.
 - [ ] Build 5 real-world Python projects.
 - [ ] Master the fundamentals so I can build applications without needing AI assistance.
 
 ---
-*Feel free to explore the folders above to see my progress!*
+
+*Feel free to explore the folders above to see my progress!* 🐍
