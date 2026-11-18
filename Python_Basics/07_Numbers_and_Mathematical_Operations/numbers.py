@@ -1,0 +1,97 @@
+# --- Integer Arithmetic ---
+add_int_1 = 69
+add_int_2 = 67
+print('Integer Addition:', add_int_1 + add_int_2)
+
+sub_int_1 = 69
+sub_int_2 = 67
+print('Integer Subtraction:', sub_int_1 - sub_int_2)
+
+mul_int_1 = 69
+mul_int_2 = 67
+print('Integer Multiplication:', mul_int_1 * mul_int_2)
+
+div_int_1 = 69
+div_int_2 = 67
+print('Integer Division:', div_int_1 / div_int_2)
+
+print('-------------------------------------')
+
+# --- Float Arithmetic ---
+sum_float_1 = 12.5
+sum_float_2 = 9.11
+print('Float Addition:', sum_float_1 + sum_float_2)
+
+sub_float_1 = 12.5
+sub_float_2 = 9.11
+print('Float Subtraction:', sub_float_1 - sub_float_2)
+
+mul_float_1 = 12.5
+mul_float_2 = 9.11
+print('Float Multiplication:', mul_float_1 * mul_float_2)
+
+div_float_1 = 12.5
+div_float_2 = 9.11
+print('Float Division:', div_float_1 / div_float_2)
+
+print('-------------------------------------')
+
+# --- Mixing Integers and Floats ---
+my_int = 67
+my_float = 9.11
+sum_int_float = my_int + my_float
+print('Mixed Addition:', sum_int_float)
+print('Mixed Type:', type(sum_int_float))
+
+print('-------------------------------------')
+
+# --- Complex Arithmetic Operations ---
+mod_int_1 = 67
+mod_int_2 = 69
+mod_floats_1 = 12.5
+mod_floats_2 = 9.11
+print('Integer Modulo:', mod_int_1 % mod_int_2)
+print('Float Modulo:', mod_floats_1 % mod_floats_2)
+
+floor_int_1 = 69
+floor_int_2 = 67
+floor_float_1 = 12.5
+floor_float_2 = 9.11
+print('Integer Floor:', floor_int_1 // floor_int_2)
+print('Float Floor:', floor_float_1 // floor_float_2)
+
+exp_int_1 = 6
+exp_int_2 = 7
+exp_float_1 = 12.5
+exp_float_2 = 9.11
+print('Integer Exponentiation:', exp_int_1 ** exp_int_2)
+print('Float Exponentiation:', exp_float_1 ** exp_float_2)
+
+print('-------------------------------------')
+
+# --- Type Conversions ---
+int_to_float = 9
+print('Int to Float:', float(int_to_float), type(float(int_to_float)))
+
+float_to_int = 9.11
+print('Float to Int:', int(float_to_int), type(int(float_to_int)))
+
+string_to_int = '67'
+string_to_float = '69.69'
+print('String to Int:', int(string_to_int), type(int(string_to_int)))
+print('String to Float:', float(string_to_float), type(float(string_to_float)))
+
+print('-------------------------------------')
+
+# --- Other Functions ---
+infinity = float('inf')
+print('Infinity:', infinity, type(infinity))
+
+round_num = 9.6969
+print('Rounded:', round(round_num, 2))
+
+abs_num = -67
+print('Absolute Value:', abs(abs_num))
+
+# pow(base, exp, mod) -> (base**exp) % mod
+print('Power with Modulo:', pow(6, 7, 9))

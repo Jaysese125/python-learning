@@ -54,6 +54,14 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - Validating prefixes and suffixes using `startswith()` and `endswith()`.
   - Counting characters using `count()`.
 
+- [x] **07_Working_with_Numbers**
+  - Arithmetic operations with integers and floats.
+  - Complex operators: modulo (`%`), floor division (`//`), exponentiation (`**`).
+  - Understanding floating-point precision and rounding errors.
+  - Converting between data types using `int()`, `float()`, and `str()`.
+  - Built-in math functions: `round()`, `abs()`, `pow()`.
+  - Working with special float values like `infinity`.
+
 ## 🎯 My Goals
 
 - [ ] Complete the freeCodeCamp Python Certification.
