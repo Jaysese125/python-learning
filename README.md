@@ -54,13 +54,19 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - Validating prefixes and suffixes using `startswith()` and `endswith()`.
   - Counting characters using `count()`.
 
-- [x] **07_Working_with_Numbers**
+- [x] **07_Numbers_and_Mathematical_Operations**
   - Arithmetic operations with integers and floats.
   - Complex operators: modulo (`%`), floor division (`//`), exponentiation (`**`).
   - Understanding floating-point precision and rounding errors.
   - Converting between data types using `int()`, `float()`, and `str()`.
   - Built-in math functions: `round()`, `abs()`, `pow()`.
   - Working with special float values like `infinity`.
+  - Using shorthand operators to update variables in place (`+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`).
+
+- [x] **08_Bill_Splitter**
+  - Practical application of arithmetic operations and floats.
+  - Calculating percentages.
+  - Using `round()` for financial formatting.
 
 ## 🎯 My Goals
 

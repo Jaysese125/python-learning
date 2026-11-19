@@ -101,3 +101,76 @@ print(abs(-15))          # 15
 print(pow(2, 3))         # 8 (2**3)
 print(pow(2, 3, 5))      # 3 ((2**3) % 5)
 ```
+
+---
+
+# How Do Augmented Assignments Work?
+
+You have already used augmented assignment with strings. Now, let's look at how it works with numbers. Augmented assignment applies an operation and stores the result back in the same variable, all in one step.
+
+The basic syntax of an augmented assignment looks like this:
+
+```python
+variable <operator>= value
+```
+
+For numeric variables, this is a shorter way to write the following assignment:
+
+```python
+variable = variable + value
+```
+
+For example, you can use augmented assignment to add 5 to an existing variable:
+
+```python
+my_var = 10
+my_var += 5
+print(my_var) # 15
+```
+
+The advantage of augmented assignment is that it provides a concise and readable way to update a variable value without repeating the variable name.
+
+Arithmetic and bitwise operators have augmented assignment forms. We've looked at the addition assignment operator (`+=`), so let's look at others:
+
+*   **Subtraction assignment (`-=`)**: Subtracts the right operand from the left variable and stores the difference.
+    ```python
+    count = 14
+    count -= 3
+    print(count) # 11
+    ```
+
+*   **Multiplication assignment (`*=`)**: Multiplies the left variable by the right operand and stores the product.
+    ```python
+    product = 65
+    product *= 7
+    print(product) # 455
+    ```
+
+*   **Division assignment (`/=`)**: Divides the left variable by the right and stores the result.
+    ```python
+    price = 100
+    price /= 4
+    print(price) # 25.0
+    ```
+
+*   **Floor division assignment (`//=`)**: Floor-divides the left variable by the right and stores the result.
+    ```python
+    total_pages = 23
+    total_pages //= 5
+    print(total_pages) # 4
+    ```
+
+*   **Modulo assignment (`%=`)**: Computes the remainder and stores it back.
+    ```python
+    bits = 35
+    bits %= 2
+    print(bits) # 1
+    # If bits is not equal to 1, the result is not even.
+    ```
+
+*   **Exponentiation assignment (`**=`)**: Raises the left variable to the power of the right and stores the result.
+    ```python
+    power = 2
+    power **= 3
+    print(power) # 8
+    ```

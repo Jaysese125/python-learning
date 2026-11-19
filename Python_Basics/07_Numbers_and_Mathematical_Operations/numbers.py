@@ -95,3 +95,33 @@ print('Absolute Value:', abs(abs_num))
 
 # pow(base, exp, mod) -> (base**exp) % mod
 print('Power with Modulo:', pow(6, 7, 9))
+
+print('-------------------------------------')
+
+# --- Augmented Assignments ---
+aug_var = 5
+aug_var += 5
+print(f'Add: {aug_var}')
+
+aug_var -= 5
+print(f'Subtract: {aug_var}')
+
+aug_var *= 2
+print(f'Multiply: {aug_var}')
+
+aug_var /= 2
+# Note: Division always creates a float, so we cast it to int for cleaner display
+print(f'Divide: {int(aug_var)}') 
+
+aug_var = 69 # Resetting the variable to an integer for the next operations
+
+aug_var %= 12
+print(f'Modulo: {aug_var}')
+
+aug_var //= 2
+print(f'Floor: {aug_var}')
+
+aug_var **= 2
+print(f'Exponent: {aug_var}')
+
+print(f'Rounded: {round(aug_var, 2)}')
