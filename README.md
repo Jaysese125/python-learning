@@ -37,13 +37,13 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - String slicing (including the step parameter and reversing).
   - Common string methods (`upper()`, `lower()`, `strip()`, `replace()`, `split()`, `join()`, `find()`, `count()`, etc.).
 
-- [x] **05_Employee_Profile_Generator**
+- [x] **05_Build_an_Employee_Profile_Generator**
   - String concatenation and augmented assignment (`+=`).
   - Type conversion using `str()`.
   - Formatting with f-strings.
   - String slicing (positive and negative indices).
 
-- [x] **06_Employee_Profile_Validator**
+- [x] **06_Build_an_Employee_Profile_Validation**
   - Finding characters and substrings using `find()`.
   - Extracting usernames using string slicing.
   - Checking substrings with the `in` operator.
@@ -63,10 +63,18 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - Working with special float values like `infinity`.
   - Using shorthand operators to update variables in place (`+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`).
 
-- [x] **08_Bill_Splitter**
+- [x] **08_Build_a_Bill_Splitter**
   - Practical application of arithmetic operations and floats.
   - Calculating percentages.
   - Using `round()` for financial formatting.
+
+- [x] **09_Booleans_and_Conditionals**
+  - Comparison operators (`==`, `!=`, `>`, `<`, `>=`, `<=`).
+  - Using `if`, `elif`, and `else` statements for control flow.
+  - Understanding indentation and `pass` statements.
+  - Truthy and falsy values (e.g., `0`, `""`, `False`) and the `bool()` function.
+  - Boolean operators: `and`, `or`, `not`.
+  - Short-circuit evaluation.
 
 ## 🎯 My Goals
 
@@ -75,5 +83,4 @@ Every folder in this repository represents a completed lesson or module. Inside 
 - [ ] Master the fundamentals so I can build applications without needing AI assistance.
 
 ---
-
 *Feel free to explore the folders above to see my progress!* 🐍
