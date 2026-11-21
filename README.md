@@ -62,6 +62,7 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - Built-in math functions: `round()`, `abs()`, `pow()`.
   - Working with special float values like `infinity`.
   - Using shorthand operators to update variables in place (`+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`).
+  - Formatting numbers in f-strings using `f'{value:.2f}'`.
 
 - [x] **08_Build_a_Bill_Splitter**
   - Practical application of arithmetic operations and floats.
@@ -75,6 +76,7 @@ Every folder in this repository represents a completed lesson or module. Inside 
   - Truthy and falsy values (e.g., `0`, `""`, `False`) and the `bool()` function.
   - Boolean operators: `and`, `or`, `not`.
   - Short-circuit evaluation.
+  - Identity operators (`is`, `is not`), `None`, and comparing object identity vs. value equality.
 
 ## 🎯 My Goals
 

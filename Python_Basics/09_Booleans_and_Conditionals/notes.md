@@ -112,3 +112,58 @@ if not is_admin:
 Python evaluates expressions from left to right and **stops as soon as it determines the final result**.
 *   With `and`: If the first operand is `False`, Python stops and returns `False` (it doesn't check the second operand).
 *   With `or`: If the first operand is `True`, Python stops and returns `True` (it doesn't check the second operand).
+
+How Do Identity Operators Work?
+
+In Python, variables are names that refer to objects. Identity operators check whether two operands refer to the same object. The is operator returns True if they do, and False otherwise. The is not operator returns the opposite result.
+
+Identity differs from equality: == and != compare value, while is and is not compare object identity. Use equality operators when comparing number or string values.
+
+None represents the absence of a value. It is the only value of the NoneType data type.
+
+Three objects you can check with identity operators are None, True, and False. Each is a singleton, meaning there is exactly one object for each.
+
+Checking for None
+
+You can use is None to check whether a value is missing, or is not None to check whether it is present:
+
+response = None
+
+print(response is None) # True
+print(response is not None) #False
+
+None is falsy, but it is not the sae object as False. For example, a response could be True for yes, False for no, or None if no answer has been given:
+
+response = False
+
+if response is None:
+    print('No answer yet')
+else:
+    print('An answer was given') # An answer was given
+
+Using if not response instead would treat both False and None alike. The identity check distinguishes a negative answer from a missing answer.
+
+Checking for True and False
+
+You can also use identity to check specifically for the boolean objects:
+
+response = False
+print(response is True) # False
+print(response is False) # True
+print(response is not None) # True
+
+These checks ask whether response is exactly True, False, or an object other than None.
+
+Questions
+What does the is operator check?
+- Whether two operands refer to the same object.
+
+What will the following code output?
+response = False
+
+print(response is False)
+print(response is not None)
+-True followed by True.
+
+A variable named response contains True for yes, False for no, or None for no answer. Which condition checks only for a missing answer?
+- response is None

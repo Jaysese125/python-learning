@@ -1,176 +1,160 @@
-# How Do You Work With Integers and Floating Point Numbers?
+# How Do Conditional Statements and Comparison Operators Work?
 
-Integers and floats are the primary numeric data types in Python. With them, you can store numeric data and perform mathematical operations.
+Conditional statements, or conditionals, let you control the flow of your program based on whether certain conditions are true or false.
 
-## Working with Integers
-Integers are whole numbers without decimal points, including positive numbers, negative numbers, and zero.
+## Comparison Operators
+Comparison operators let you compare two or more values and return a boolean value (`True` or `False`).
+
+| Operator | Name | Description |
+| :--- | :--- | :--- |
+| `==` | Equal | Checks if two values are equal. |
+| `!=` | Not equal | Checks if two values are not equal. |
+| `>` | Greater than | Checks if the left value is greater than the right. |
+| `<` | Less than | Checks if the left value is less than the right. |
+| `>=` | Greater than or equal | Checks if the left value is greater than or equal to the right. |
+| `<=` | Less than or equal | Checks if the left value is less than or equal to the right. |
 
 ```python
-my_int_1 = 56
-my_int_2 = -4
-print(type(my_int_1)) # <class 'int'>
+print(3 > 4)  # False
+print(3 < 4)  # True
+print(3 == 4) # False
+print(3 != 4) # True
 ```
 
-Here is how to perform basic arithmetic operations (Addition, Subtraction, Multiplication, and Division) with integers:
+## Using `if` Statements
+The most basic conditional is the `if` statement. If the condition is `True`, the indented code block runs. (Python recommends using 4 spaces for indentation).
 
 ```python
-my_int_1 = 56
-my_int_2 = 12
+age = 18
 
-print('Addition:', my_int_1 + my_int_2)       # 68
-print('Subtraction:', my_int_1 - my_int_2)    # 44
-print('Multiplication:', my_int_1 * my_int_2) # 672
-print('Division:', my_int_1 / my_int_2)       # 4.666666666666667
-```
-*(Note: Division with `/` always returns a float, even if the numbers are integers).*
+if age >= 18:
+    print('You are an adult')
 
-## Working with Floats
-Floats represent numbers in floating-point form, including zero (e.g., `3.14`, `-0.5`, `0.0`).
-
-```python
-my_float_1 = 5.4
-my_float_2 = 12.0
-
-print('Float Addition:', my_float_1 + my_float_2) # 17.4
-print('Float Division:', my_float_2 / my_float_1) # 2.2222222222222223
+# If age is 12, nothing is printed because the condition is False.
 ```
 
-## Mixing Integers and Floats
-If you perform arithmetic operations with a mix of integers and floats, Python will automatically convert the result to a float.
+*Note: You can use the `pass` keyword as a placeholder if you want to create an empty code block for now.*
+
+## Adding `else`
+The `else` clause runs when the `if` condition is `False`.
 
 ```python
-my_int = 56
-my_float = 5.34
-sum_int_and_float = my_int + my_float
-print(sum_int_and_float) # 61.34
-print(type(sum_int_and_float)) # <class 'float'>
+age = 12
+
+if age >= 18:
+    print('You are an adult')
+else:
+    print('You are not an adult yet')
 ```
 
-## Complex Arithmetic Operations
-Python provides operators for more complex math:
-
-*   **Modulo (`%`)**: Returns the remainder of division.
-*   **Floor Division (`//`)**: Divides and rounds down to the nearest whole number.
-*   **Exponentiation (`**`)**: Raises a number to the power of another.
+## Adding `elif` (Else If)
+Use `elif` to check multiple conditions. Python will check them from top to bottom and run the first block that evaluates to `True`. If none are true, it falls back to `else`.
 
 ```python
-my_int_1 = 56
-my_int_2 = 12
+age = 12
 
-print('Modulo:', my_int_1 % my_int_2)         # 8
-print('Floor Division:', my_int_1 // my_int_2) # 4
-print('Exponentiation:', my_int_1 ** my_int_2) # 951166013805414055936
-```
-
-## Floating Point Representation and Rounding Errors
-Sometimes, float operations result in more decimal digits than expected. For example, `0.1 + 0.2` equals `0.30000000000000004` instead of `0.3`. 
-This happens because numbers are stored in binary format, and some fractions cannot be represented exactly in binary. This leads to tiny rounding errors.
-
-## Converting Data into Integers or Floats
-Python provides built-in functions to convert data types:
-*   `float()`: Converts a number or string to a float.
-*   `int()`: Converts a number or string to an integer. (It truncates the decimal, it does not round).
-
-```python
-my_float = 12.92563
-my_int = int(my_float)
-print(my_int) # 12 (The decimal is chopped off)
-
-my_str = '45'
-converted_int = int(my_str)
-print(converted_int, type(converted_int)) # 45 <class 'int'>
-```
-
-### Positive Infinity
-You can create a special float value representing infinity using `float('inf')`. This is useful when you need a starting value that is guaranteed to be larger than any other number.
-
-```python
-infinity = float('inf')
-print(infinity) # inf
-```
-
-## Other Useful Functions
-*   **`round(number, decimal_places)`**: Rounds a number to the specified number of decimal places.
-*   **`abs(number)`**: Returns the absolute (positive) value of a number.
-*   **`pow(base, exp, mod)`**: Raises a number to a power, and optionally calculates the modulo of the result.
-
-```python
-print(round(4.798))      # 5
-print(round(4.253, 1))   # 4.3
-print(abs(-15))          # 15
-print(pow(2, 3))         # 8 (2**3)
-print(pow(2, 3, 5))      # 3 ((2**3) % 5)
+if age >= 18:
+    print('You are an adult')
+elif age >= 13:
+    print('You are a teenager')
+else:
+    print('You are a child')
 ```
 
 ---
 
-# How Do Augmented Assignments Work?
+# What are Truthy and Falsy Values, and How Do Boolean Operators Work?
 
-You have already used augmented assignment with strings. Now, let's look at how it works with numbers. Augmented assignment applies an operation and stores the result back in the same variable, all in one step.
+In Python, every value has an inherent boolean value. 
+**Falsy values** evaluate to `False`, while **Truthy values** evaluate to `True`.
 
-The basic syntax of an augmented assignment looks like this:
+*   **Falsy Values:** `False`, `0` (integer), `0.0` (float), `""` (empty string).
+*   **Truthy Values:** Everything else (non-zero numbers, non-empty strings, etc.).
 
+You can check this using the `bool()` function:
 ```python
-variable <operator>= value
+print(bool(0))       # False
+print(bool('Hello')) # True
 ```
 
-For numeric variables, this is a shorter way to write the following assignment:
+## Boolean Operators
+These operators allow you to combine multiple expressions: `and`, `or`, and `not`.
 
+### The `and` Operator
+Both operands must be truthy for the result to be truthy. It returns the first falsy operand, or the second operand if both are truthy.
 ```python
-variable = variable + value
+is_citizen = True
+age = 25
+
+if is_citizen and age >= 18:
+    print('You are eligible to vote')
 ```
 
-For example, you can use augmented assignment to add 5 to an existing variable:
-
+### The `or` Operator
+At least one operand must be truthy for the result to be truthy. It returns the first truthy operand, or the second operand if both are falsy.
 ```python
-my_var = 10
-my_var += 5
-print(my_var) # 15
+is_student = True
+
+if age < 18 or is_student:
+    print('You are eligible for a student discount')
 ```
 
-The advantage of augmented assignment is that it provides a concise and readable way to update a variable value without repeating the variable name.
+### The `not` Operator
+The `not` operator takes a single operand and inverts its boolean value.
+```python
+is_admin = False
 
-Arithmetic and bitwise operators have augmented assignment forms. We've looked at the addition assignment operator (`+=`), so let's look at others:
+if not is_admin:
+    print('Access denied for non-administrators.')
+```
 
-*   **Subtraction assignment (`-=`)**: Subtracts the right operand from the left variable and stores the difference.
-    ```python
-    count = 14
-    count -= 3
-    print(count) # 11
-    ```
+## Short-Circuiting
+Python evaluates expressions from left to right and **stops as soon as it determines the final result**.
+*   With `and`: If the first operand is `False`, Python stops and returns `False` (it doesn't check the second operand).
+*   With `or`: If the first operand is `True`, Python stops and returns `True` (it doesn't check the second operand).
 
-*   **Multiplication assignment (`*=`)**: Multiplies the left variable by the right operand and stores the product.
-    ```python
-    product = 65
-    product *= 7
-    print(product) # 455
-    ```
+---
 
-*   **Division assignment (`/=`)**: Divides the left variable by the right and stores the result.
-    ```python
-    price = 100
-    price /= 4
-    print(price) # 25.0
-    ```
+# How Do Identity Operators Work?
 
-*   **Floor division assignment (`//=`)**: Floor-divides the left variable by the right and stores the result.
-    ```python
-    total_pages = 23
-    total_pages //= 5
-    print(total_pages) # 4
-    ```
+In Python, variables are names that refer to objects. Identity operators check whether two operands refer to the **same object**.
 
-*   **Modulo assignment (`%=`)**: Computes the remainder and stores it back.
-    ```python
-    bits = 35
-    bits %= 2
-    print(bits) # 1
-    # If bits is not equal to 1, the result is not even.
-    ```
+*   `is` returns `True` if they refer to the same object.
+*   `is not` returns the opposite result.
 
-*   **Exponentiation assignment (`**=`)**: Raises the left variable to the power of the right and stores the result.
-    ```python
-    power = 2
-    power **= 3
-    print(power) # 8
-    ```
+**Identity differs from equality:** `==` and `!=` compare *values*, while `is` and `is not` compare *object identity*. Use equality operators when comparing number or string values.
+
+`None` represents the absence of a value. It is the only value of the `NoneType` data type. Objects like `None`, `True`, and `False` are **singletons**, meaning there is exactly one object for each in memory.
+
+## Checking for None
+You can use `is None` to check whether a value is missing, or `is not None` to check whether it is present.
+
+```python
+response = None
+
+print(response is None)     # True
+print(response is not None) # False
+```
+
+`None` is falsy, but it is not the same object as `False`. For example, a response could be `True` for yes, `False` for no, or `None` if no answer has been given:
+
+```python
+response = False
+
+if response is None:
+    print('No answer yet')
+else:
+    print('An answer was given') # An answer was given
+```
+
+Using `if not response:` instead would treat both `False` and `None` alike. The identity check distinguishes a negative answer from a missing answer.
+
+## Checking for True and False
+You can also use identity to check specifically for the boolean objects:
+
+```python
+response = False
+print(response is True)     # False
+print(response is False)    # True
+print(response is not None) # True
+```

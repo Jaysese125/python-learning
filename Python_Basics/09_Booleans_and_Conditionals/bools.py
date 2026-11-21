@@ -41,3 +41,47 @@ elif not have_license:
     print('You can\'t drive')
 else:
     print('No future')
+
+print("\n--- Identity Operators ---")
+# Checking for None
+response = None
+print(response == None)      # True (Works, but not recommended)
+print(response is None)      # True (Recommended)
+print(response != None)      # False
+print(response is not None)  # False
+print(bool(response))        # False
+
+# Comparing a string 'None' to the actual None object
+response = 'None'
+print(bool(response))        # True (It's a non-empty string)
+
+response = None
+if response is not None:
+    print('An answer was given')
+else:
+    print('No answer yet')   # This will print because response is None
+
+# Checking for True and False
+response = True
+print(response == True)     # True
+print(response is True)     # True
+print(response == False)    # False
+print(response is False)    # False
+print(response != True)     # False
+print(response is not True) # False
+print(response != False)    # True
+print(response is not False) # True
+
+# *Note: == checks the value inside the variable. 
+# is checks if they refer to the exact same object in memory.
+
+# A practical use case for identity operators:
+response = None
+if response is True:
+    print('yes')
+elif response is False:
+    print('no')
+elif response is None:
+    print('no answer')
+else:
+    print('something is wrong')

@@ -125,3 +125,22 @@ aug_var **= 2
 print(f'Exponent: {aug_var}')
 
 print(f'Rounded: {round(aug_var, 2)}')
+
+print('-------------------------------------')
+
+# --- F-String Number Formatting ---
+# Formatting is useful for displaying trailing zeros (e.g., for prices)
+to_round = 9.10101
+
+# Using round() returns a float (no trailing zeros)
+round_format = round(to_round, 2)
+print('Using round():', round_format) # Prints 9.1
+
+# Using f-string formatting displays exactly 2 decimal places
+# Note: f-string formatting returns a STRING. We wrap it in float() 
+# so we can still use it in calculations if needed.
+fstring_display = f'{to_round:.2f}'
+fstring_format = float(fstring_display) 
+
+print('Using f-string:', fstring_format, type(fstring_format)) # Prints 9.1 (as a float)
+print('Value unchanged:', to_round) # Value doesn't change
