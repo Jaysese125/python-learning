@@ -4,11 +4,11 @@ Welcome to my Python learning repository!
 
 This repository documents my journey of learning Python from scratch. To build a strong foundation without relying on AI to write code for me, I am using **freeCodeCamp**.
 
-Every folder in this repository represents a completed lesson or module. Inside each folder, you will find:
+Every folder represents a completed lesson or module. Inside each folder, you will find:
 
-- 📝 `notes.md` - My digital notes explaining the concepts in my own words.
-- 📸 `.png` screenshots - Proof of completing the freeCodeCamp modules.
-- 💻 `.py` files - The actual practice code I wrote myself to reinforce what I learned.
+- 📝 `notes.md` – Digital notes explaining concepts in my own words.
+- 📸 `.png` screenshots – Proof of completing the freeCodeCamp modules.
+- 💻 `.py` files – Practice code written to reinforce what I learned.
 
 ## 🗺️ Course Progress
 
@@ -23,14 +23,19 @@ Every folder in this repository represents a completed lesson or module. Inside 
 - [x] **07_Numbers_and_Mathematical_Operations**
   - Integers, floats, arithmetic operations, and f-string formatting.
 - [x] **08_Build_a_Bill_Splitter**
-  - Practical application of math and formatting.
+  - Practical application of mathematical operations and formatting.
 - [x] **09_Booleans_and_Conditionals**
   - Comparison operators, `if`/`elif`/`else`, boolean logic, and identity operators (`is`/`is not`).
 - [x] **10_Build_a_Movie_Ticket_Booking_Calculator**
-  - Combining conditions with `and`/`or`.
+  - Combining conditions with `and` and `or`.
   - Operator precedence and grouping with parentheses.
   - Nested `if` statements.
-  - Truthy/falsy checks in action.
+  - Truthy and falsy values.
+- [x] **11_Build_a_Travel_Weather_Planner**
+  - Using conditional statements to evaluate commuting conditions.
+  - Combining distance categories with weather and vehicle availability.
+  - Applying `and`, `or`, and `not` operators.
+  - Evaluating conditions in ascending order using `if`, `elif`, and `else`.
 
 ## 🎯 My Goals
 
@@ -39,4 +44,5 @@ Every folder in this repository represents a completed lesson or module. Inside 
 - [ ] Master the fundamentals so I can build applications without needing AI assistance.
 
 ---
+
 *Feel free to explore the folders above to see my progress!* 🐍
