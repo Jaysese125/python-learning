@@ -36,6 +36,11 @@ Every folder represents a completed lesson or module. Inside each folder, you wi
   - Combining distance categories with weather and vehicle availability.
   - Applying `and`, `or`, and `not` operators.
   - Evaluating conditions in ascending order using `if`, `elif`, and `else`.
+- [x] **12_Understanding_Function_and_Scope**
+  - Defining custom functions using `def`.
+  - Using positional and keyword arguments.
+  - Returning values using `return` (and default `None`).
+  - Using built-in functions like `input()`.
 
 ## 🎯 My Goals
 
@@ -44,5 +49,4 @@ Every folder represents a completed lesson or module. Inside each folder, you wi
 - [ ] Master the fundamentals so I can build applications without needing AI assistance.
 
 ---
-
 *Feel free to explore the folders above to see my progress!* 🐍
