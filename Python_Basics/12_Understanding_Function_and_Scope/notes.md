@@ -9,14 +9,6 @@ name = input('What is your name?') # User types "Kolade" and presses Enter
 print('Hello', name) # Output: Hello Kolade
 ```
 
-`int()` converts a number, a boolean, or a string representing an integer into an integer:
-```python
-print(int(3.14))  # 3
-print(int('42'))  # 42
-print(int(True))  # 1
-print(int(False)) # 0
-```
-
 ## Defining and Calling Functions
 You can write your own custom functions using the `def` keyword, followed by the function name, a pair of parentheses, and a colon. The indented code inside is the function's body.
 
@@ -24,7 +16,6 @@ You can write your own custom functions using the `def` keyword, followed by the
 def hello():
     print('Hello World')
 
-# To run the function, you must "call" it:
 hello() # Hello World
 ```
 
@@ -37,28 +28,21 @@ def calculate_sum(a, b): # a and b are parameters
 
 calculate_sum(3, 1) # 3 and 1 are arguments. Output: 4
 ```
-
-If you call the function without the correct number of arguments, you'll get a `TypeError`.
+*Note: If you call the function without the correct number of arguments, you'll get a `TypeError`.*
 
 ## Positional and Keyword Arguments
 **Positional arguments** are matched to parameters by their position (order matters).
+**Keyword arguments** are passed by writing the parameter name followed by `=` and a value.
+
 ```python
 def introduce(name, age):
     print(f'My name is {name} and I am {age} years old.')
 
-introduce('Alice', 25) # My name is Alice and I am 25 years old.
-```
+introduce('Alice', 25)        # Positional
+introduce(age=25, name='Alice') # Keyword (order doesn't matter)
 
-**Keyword arguments** are passed by writing the parameter name followed by `=` and a value. Python matches these by name, so order doesn't matter.
-```python
-introduce(age=25, name='Alice') 
-# My name is Alice and I am 25 years old.
-```
-
-You can combine them, but **positional arguments must come first**:
-```python
+# You can combine them, but positional arguments must come first:
 introduce('Alice', age=25) # Valid
-# introduce(name='Alice', 25) # SyntaxError!
 ```
 
 ## Returning Values From Functions
@@ -66,15 +50,42 @@ Functions use the `return` keyword to exit the function and send back a value. I
 
 ```python
 def calculate_sum(a, b):
-    print(a + b)
-
-my_sum = calculate_sum(3, 1) # Prints 4
-print(my_sum) # None (because there is no return statement)
-
-# Fix it with return:
-def calculate_sum_fixed(a, b):
     return a + b
 
-my_sum_fixed = calculate_sum_fixed(3, 1)
-print(my_sum_fixed) # 4
+my_sum = calculate_sum(3, 1)
+print(my_sum) # 4
+```
+
+---
+
+# What is Scope in Python and How Does It Work?
+
+Scope determines where you can use a variable in your code. We focus on **local** and **global** scope.
+
+*   **Global Scope:** A variable created outside a function. It can be used both inside and outside functions.
+*   **Local Scope:** A variable created inside a function (including parameters). It can only be used inside that function.
+
+```python
+tax_rate = 0.1  # Global variable
+
+def calculate_tax(price):
+    tax = price * tax_rate  # 'tax' is local, 'price' is local
+    return tax
+
+print(calculate_tax(50)) # 5.0
+print(tax_rate)          # 0.1 (Global is accessible here)
+# print(tax)             # NameError! 'tax' only exists inside the function.
+```
+
+## Pass by Assignment
+Python passes arguments by assignment. When you call a function, the parameter becomes a local name that refers to the object supplied. Reassigning that parameter does not change the original variable you passed:
+
+```python
+def double_number(number):
+    number = number * 2
+    print(number) # 20
+
+original = 10
+double_number(original)
+print(original) # 10 (The original variable is unchanged!)
 ```
