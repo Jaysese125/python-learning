@@ -2,7 +2,7 @@
 
 Welcome to my Python learning repository!
 
-This repository documents my journey of learning Python from scratch. To build a strong foundation without relying on AI to write code for me, I am using **freeCodeCamp**.
+This repository documents my journey of learning Python from scratch. To build a strong foundation without relying on AI to write code for me, I am following **freeCodeCamp**.
 
 Every folder represents a completed lesson or module. Inside each folder, you will find:
 
@@ -16,24 +16,24 @@ Every folder represents a completed lesson or module. Inside each folder, you wi
 
 - [x] **01_Introduction_to_Python**
   - What is Python?
-  - Common industry uses (Data Science, Web Development, Cybersecurity).
+  - Common industry uses: Data Science, Web Development, and Cybersecurity.
 
 - [x] **02_Variables_and_Data_Types**
-  - How to declare variables and naming conventions (`snake_case`).
-  - Using the `print()` function.
-  - Data types: Integers, Floats, Strings, and Booleans.
+  - Variable declaration and naming conventions (`snake_case`).
+  - The `print()` function.
+  - Integers, Floats, Strings, and Booleans.
   - Checking types using `type()` and `isinstance()`.
 
 - [x] **03_Report_card_printer**
-  - Practical application of string, boolean, integer, and float data types.
+  - Practical application of Python data types.
   - Formatting output using `type()` and `isinstance()`.
 
 - [x] **04_Introduction_to_Strings**
   - String creation, multiline strings, and escape sequences.
   - String indexing, length (`len()`), and immutability.
-  - Concatenation, repetition, and interpolation (f-strings).
-  - String slicing (positive and negative indices).
-  - Common string methods (`upper()`, `lower()`, `strip()`, `replace()`, `split()`, `join()`, `find()`, `count()`, `startswith()`, `endswith()`).
+  - Concatenation, repetition, and f-strings.
+  - String slicing.
+  - Common string methods.
 
 - [x] **05_Build_an_Employee_Profile_Generator**
   - String concatenation and augmented assignment (`+=`).
@@ -45,49 +45,70 @@ Every folder represents a completed lesson or module. Inside each folder, you wi
   - Finding characters using `find()` and slicing.
   - Checking substrings with the `in` operator.
   - Cleaning strings using `strip()`, `lower()`, and `title()`.
-  - Validating prefixes and suffixes using `startswith()` and `endswith()`.
+  - Validating prefixes and suffixes.
 
 - [x] **07_Numbers_and_Mathematical_Operations**
   - Arithmetic operations with integers and floats.
-  - Complex operators: modulo (`%`), floor division (`//`), exponentiation (`**`).
-  - Understanding floating-point precision and rounding errors.
-  - Converting data types using `int()`, `float()`, and `str()`.
-  - Built-in math functions: `round()`, `abs()`, `pow()`.
-  - Using shorthand operators: `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`.
-  - Formatting numbers in f-strings using `f'{value:.2f}'`.
+  - Modulo (`%`), floor division (`//`), and exponentiation (`**`).
+  - Floating-point precision and rounding errors.
+  - Type conversion using `int()`, `float()`, and `str()`.
+  - Built-in math functions: `round()`, `abs()`, and `pow()`.
+  - Augmented assignment operators.
+  - Number formatting in f-strings.
 
 - [x] **08_Build_a_Bill_Splitter**
-  - Practical application of mathematical operations and floats.
+  - Practical application of mathematical operations.
   - Calculating percentages.
   - Using `round()` for financial formatting.
 
 - [x] **09_Booleans_and_Conditionals**
-  - Comparison operators (`==`, `!=`, `>`, `<`, `>=`, `<=`).
-  - Using `if`, `elif`, and `else` statements.
-  - Understanding indentation and `pass` statements.
+  - Comparison operators.
+  - `if`, `elif`, and `else` statements.
+  - Indentation and `pass`.
   - Truthy and falsy values.
-  - Boolean operators: `and`, `or`, `not`, and short-circuiting.
-  - Identity operators (`is`, `is not`) and checking for `None`.
+  - Boolean operators: `and`, `or`, and `not`.
+  - Short-circuit evaluation.
+  - Identity operators (`is`, `is not`) and `None`.
 
 - [x] **10_Build_a_Movie_Ticket_Booking_Calculator**
   - Combining conditions with `and` and `or`.
-  - Operator precedence and grouping with parentheses.
+  - Operator precedence and parentheses.
   - Nested `if` statements.
-  - Truthy and falsy values in action.
+  - Applying truthy and falsy values.
 
 - [x] **11_Build_a_Travel_Weather_Planner**
-  - Using conditional statements to evaluate commuting conditions.
-  - Combining distance categories with weather and vehicle availability.
-  - Applying `and`, `or`, and `not` operators.
-  - Evaluating conditions in ascending order using `if`, `elif`, and `else`.
+  - Evaluating commuting conditions.
+  - Combining distance, weather, and vehicle availability.
+  - Applying `and`, `or`, and `not`.
+  - Using `if`, `elif`, and `else` to evaluate conditions.
 
 - [x] **12_Understanding_Function_and_Scope**
   - Defining custom functions using `def`.
-  - Using positional and keyword arguments.
-  - Returning values using `return` (and the default `None`).
+  - Positional and keyword arguments.
+  - Returning values using `return`.
+  - Understanding the default `None` return value.
   - Using built-in functions like `input()`.
-  - Understanding Global vs. Local Scope.
+  - Global and local scope.
   - Pass-by-assignment in Python.
+
+- [x] **13_Build_a_Kitchen_Inventory_Tracker**
+  - Creating reusable functions to manage inventory.
+  - Using parameters and arguments.
+  - Understanding local and global variables.
+  - Name shadowing between local parameters and global variables.
+  - Using conditional statements inside functions.
+  - Returning updated values from functions.
+  - Understanding why returning a value does not automatically modify a global variable.
+  - Updating inventory by assigning returned values.
+
+- [x] **14_Build_an_Apply_Discount_Function**
+  - Defining functions with multiple parameters.
+  - Validating data types using `isinstance()`.
+  - Checking numeric values using conditional statements.
+  - Handling invalid inputs with `return`.
+  - Applying logical operators (`or`) for validation.
+  - Calculating percentage discounts.
+  - Returning calculated final prices.
 
 ## 🎯 My Goals
 
@@ -96,4 +117,5 @@ Every folder represents a completed lesson or module. Inside each folder, you wi
 - [ ] Master the fundamentals so I can build applications without needing AI assistance.
 
 ---
+
 *Feel free to explore the folders above to see my progress!* 🐍
