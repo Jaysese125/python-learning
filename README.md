@@ -110,6 +110,18 @@ Every folder represents a completed lesson or module. Inside each folder, you wi
   - Calculating percentage discounts.
   - Returning calculated final prices.
 
+- [x] **15_Build_a_Caesar_Cipher**
+  - Understanding the Caesar cipher encryption technique.
+  - Using string slicing and concatenation to shift alphabets.
+  - Creating translation tables with `str.maketrans()`.
+  - Translating strings using `.translate()`.
+  - Building reusable encryption and decryption functions.
+  - Using default parameter values.
+  - Validating inputs with `isinstance()`.
+  - Understanding Boolean values as subclasses of integers.
+  - Using negative shifts to reverse encryption.
+  - Exploring basic cryptography and cipher weaknesses.
+
 ## 🎯 My Goals
 
 - [ ] Complete the freeCodeCamp Python Certification.
